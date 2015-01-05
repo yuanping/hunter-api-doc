@@ -30,12 +30,12 @@
 ### Params
 
 ```json
-	{
-		"title": "task title",
-		"desc": "description",
-		"name": "task name",
-		"type": "comment_task",
-		"reward": 20,
-		"parent_id": 5
-	}
+  {
+    "title": "task title",
+    "desc": "description",
+    "name": "task name",
+    "type": "comment_task",
+    "reward": 20,
+    "parent_id": 5
+  }
 ```
