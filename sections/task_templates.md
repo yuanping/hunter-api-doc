@@ -11,10 +11,10 @@
 ### Response
 
 ```json
-	[
-		{
-			"id":22,
-			"name":"住宿评论",
+  [
+    {
+      "id":22,
+      "name":"住宿评论",
       "title":"添加评论",
       "desc":"真实详尽的评论可以帮助...",
       "reward": 5,
@@ -31,7 +31,7 @@
         }
       ],
       "state":"pending/submitted/done/rejected"
-		}
-	]
+    }
+  ]
 ```
 关于`resources`的定义，参考 [Resources](https://github.com/yuanping/hunter-api-doc/blob/master/sections/resources.md)

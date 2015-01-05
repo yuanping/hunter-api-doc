@@ -35,7 +35,7 @@
       "key": "travel_type",
       "type": "SelectResource",
       "list": [{"home_travel": "家庭游", "business": "商务"}],
-      "value": 'home_travel'
+      "value": "home_travel"
     }
 ```
 
