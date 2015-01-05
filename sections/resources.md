@@ -2,10 +2,10 @@
 
 ## Resource
 
-资源是样例与猎人提交的内容（包括图片，文本）的抽象。`type`如果是`ExampleResource`表示样例，其它表猎人提交的内容。 
+资源是样例与猎人提交的内容（包括图片，文本）的抽象。`type`如果是`TextExample`or`ImageExample`表示样例，其它类型表示猎人提交的内容。 
 
 ### Description
-一般都会有`title`, `desc`, `key`, `type`, `value`，样例与资源组没有`key`。 `title`， `desc`等都可以为空，根据UI进行选择性显示。  
+一般都会有`title`, `desc`, `key`, `type`, `value`，样例没有`key`。 `title`， `desc`等都可以为空，根据UI进行选择性显示。  
 `title`: 字段的Label  
 `desc`: 描述  
 `key`: 资源的标识  
@@ -118,19 +118,3 @@
       "list": ["image_url"]
     }
 ```
-
-### 资源组
-```json
-  {
-    "title": "title",
-    "desc": "desc",
-    "type": "ResourceGroup",
-    "list": [
-      {
-        "title": "sub resouce ttile",
-        "desc": "description"
-      }
-    ]
-  }
-```
-资源组主要是为UI显示，几个资源显示在一起，比如添加评论时，对房间各项指标进行打分。

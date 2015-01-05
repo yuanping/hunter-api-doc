@@ -28,10 +28,19 @@
           "key": "house_raty",
           "type": "RatyResource",
           "list": [1, 2, 3, 4, 5]
-        }
+        },
+        [
+          {
+            "title": "性价比",
+            "key": "house_price_cost_raty",
+            "type": "RatyResource",
+            "list": [1, 2, 3, 4, 5]
+          }
+        ]
       ],
       "state":"pending/submitted/done/rejected"
     }
   ]
 ```
 关于`resources`的定义，参考 [Resources](https://github.com/yuanping/hunter-api-doc/blob/master/sections/resources.md)
+resource放在一个数组里，表示一组，比如添加评论时，对房间各项指标进行打分。
