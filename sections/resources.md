@@ -34,7 +34,7 @@
       "desc": "请选择出行的类型",
       "key": "travel_type",
       "type": "SelectResource",
-      "list": [{'home_travel': '家庭游', 'business': '商务'}],
+      "list": [{"home_travel": "家庭游", "business": "商务"}],
       "value": 'home_travel'
     }
 ```

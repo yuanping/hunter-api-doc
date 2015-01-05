@@ -51,6 +51,7 @@ If API Server is having trouble, you might see a 5xx error. 500 means that the a
 
 ## 数据接口
 
-* [TaskTemplate](https://github.com/yuanping/hunter-api-doc/blob/master/sections/task_templates.md)
+* [TaskTemplates](https://github.com/yuanping/hunter-api-doc/blob/master/sections/task_templates.md)
+* [Resources](https://github.com/yuanping/hunter-api-doc/blob/master/sections/resources.md)
 * [Tasks](https://github.com/yuanping/hunter-api-doc/blob/master/sections/tasks.md)
 
