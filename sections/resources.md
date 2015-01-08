@@ -12,7 +12,9 @@
 `type`: 标识UI的展示类型  
 `value`: 默认值  
 `placehold`: 占位显示说明  
+`min_lenght`: 最小长度
 `step`: 属于任务第几步显示的资源，没有此字段时，表示任务只有一步  
+`divider`: 底部分隔线，默认为true
 
 ### 文本
 
@@ -22,11 +24,12 @@
       "desc": "请填写房间的优点",
       "key": "house_benefit",
       "type": "TextResource",
-      "placehold": "优点"
+      "placehold": "优点",
+      "min_lenght": 35
     }
 ```
 
-### 选择
+### 单项选择
 
 ```json
     {
@@ -35,6 +38,19 @@
       "key": "travel_type",
       "type": "SelectResource",
       "list": [{"home_travel": "家庭游", "business": "商务"}],
+      "value": "home_travel"
+    }
+```
+
+### 多项选择
+
+```json
+    {
+      "title": "旅行类型",
+      "desc": "请选择出行的类型",
+      "key": "travel_type",
+      "type": "MultiSelectResource",
+      "list": ["家庭游", "商务"],
       "value": "home_travel"
     }
 ```
