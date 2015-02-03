@@ -3,6 +3,9 @@
 ## Resource
 
 资源是样例与猎人提交的内容（包括图片，文本）的抽象。`type`如果是`TextExample`or`ImageExample`表示样例，其它类型表示猎人提交的内容。 
+提交ImageResource时，key的命名格式:{user_id}/{task_type}/{task_id}/{resource_key}-n.jpg 。
+其中n为自然数，当上传三张时，分别为-1,-2,-3。eg. 8/house_overview_task/3/house_overview_image-1.jpg
+文件上传参考： [Files](https://github.com/yuanping/hunter-api-doc/blob/master/sections/files.md)
 
 ### Description
 一般都会有`title`, `desc`, `key`, `type`, `value`，样例没有`key`。 `title`， `desc`等都可以为空，根据UI进行选择性显示。  
@@ -15,6 +18,7 @@
 `min_lenght`: 最小长度
 `step`: 属于任务第几步显示的资源，没有此字段时，表示任务只有一步  
 `divider`: 底部分隔线，默认为true
+`required`: 是否为必填字段，默认为true
 
 ### 文本
 
@@ -131,6 +135,6 @@
       "title": "title",
       "desc": "desc",
       "type": "ImageExample",
-      "list": ["image_url"]
+      "examples": "[title]{key}^[title1]{key1}^[title1]{key1}"
     }
 ```

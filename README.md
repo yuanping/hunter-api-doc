@@ -46,6 +46,11 @@ If API Server is having trouble, you might see a 5xx error. 500 means that the a
 我们返回的所有的数据都是以JSON格式，所以API URL都以.json结尾。  
 如果你忘记了设置`Content-Type`，会收到`415 Unsupported Media Type`的返回代码。
 
+所有接口支持两种请求方式：json和form表单提交 
+注意要设置正确Head的Content-Type值。
+比如任务的资源的提交格式： 
+Content-Type:application/json => {"resources": [{"key": "bb", "value": "123"}, {"key": "cc", "value": "33"}]} 
+
 # 认证
 
 
@@ -54,4 +59,5 @@ If API Server is having trouble, you might see a 5xx error. 500 means that the a
 * [TaskTemplates](https://github.com/yuanping/hunter-api-doc/blob/master/sections/task_templates.md)
 * [Resources](https://github.com/yuanping/hunter-api-doc/blob/master/sections/resources.md)
 * [Tasks](https://github.com/yuanping/hunter-api-doc/blob/master/sections/tasks.md)
+* [Files](https://github.com/yuanping/hunter-api-doc/blob/master/sections/files.md)
 
